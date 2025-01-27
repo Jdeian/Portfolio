@@ -13,7 +13,7 @@ const Transition = ({ children, pagePosition }) => {
       scale: 1,
       opacity: 1,
       transition: {
-        duration: 1.8,
+        duration: 2,
         ease: [0.22, 1, 0.36, 1],
       },
     },
@@ -22,7 +22,7 @@ const Transition = ({ children, pagePosition }) => {
       scale: 0.8,
       opacity: 0,
       transition: {
-        duration: 1.8,
+        duration: 2,
         ease: [0.22, 1, 0.36, 1],
       },
     }),
@@ -32,7 +32,7 @@ const Transition = ({ children, pagePosition }) => {
     <AnimatePresence mode="wait">
       <motion.div
         key={pagePosition}
-        custom={pagePosition} // Pass direction to variants
+        custom={pagePosition} 
         initial="initial"
         animate="animate"
         exit="exit"
